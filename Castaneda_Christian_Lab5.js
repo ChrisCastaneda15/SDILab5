@@ -18,16 +18,19 @@
         var numAdd = num1 + num2;
         return numAdd;
     };
-    // var sub = function(num1, num2)
-    // {
-         // var numSub = num1 - num2;
-        // return numSub;
-    // };
+    
+    var sub = function(num1, num2)
+    {
+         var numSub = num1 - num2;
+        return numSub;
+    };
+    
     // var mult = function(num1, num2)
     // {
          // var numMult = num1 * num2;
         // return numMult;
     // };
+    
     // var divide = function(num1, num2)
     // {
          // var numDiv = num1 / num2;
@@ -40,12 +43,15 @@
     num1 = parseFloat(prompt( "Enter your first number: "));
     num2 = parseFloat(prompt("Enter your second number: "));
     
-    // adding
+    // Addition
     
     numReturn = add(num1, num2);
     console.log(num1 + " + " + num2 + " = " + numReturn);
 
-
+    // Subtraction
+    
+    numReturn = sub(num1, num2);
+    console.log(num1 + " - " + num2 + " = " + numReturn);
     
     
 
