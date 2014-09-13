@@ -13,13 +13,13 @@
 
 // Functions
 
-    var add = function(num1, num2)
+    var add  = function(num1, num2)
     {
         var numAdd = num1 + num2;
         return numAdd;
     };
     
-    var sub = function(num1, num2)
+    var sub  = function(num1, num2)
     {
          var numSub = num1 - num2;
         return numSub;
@@ -31,11 +31,11 @@
         return numMult;
     };
     
-    // var divide = function(num1, num2)
-    // {
-         // var numDiv = num1 / num2;
-        // return numDiv;
-    // };
+    var div  = function(num1, num2)
+    {
+         var numDiv = num1 / num2;
+        return numDiv;
+    };
     
 
 // MAIN
@@ -57,6 +57,11 @@
     
     numReturn = mult(num1, num2);
     console.log(num1 + " X " + num2 + " = " + numReturn);
+    
+    // Division
+    
+    numReturn = div(num1, num2);
+    console.log(num1 + " / " + num2 + " = " + numReturn);
     
     
 
