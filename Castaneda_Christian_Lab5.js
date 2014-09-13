@@ -9,6 +9,7 @@
 
     var num1;
     var num2;
+    var operation;
     var numReturn;
 
 // Functions
@@ -39,30 +40,47 @@
     
 
 // MAIN
-
+    
     num1 = parseFloat(prompt( "Enter your first number: "));
     num2 = parseFloat(prompt("Enter your second number: "));
+    operation = prompt("Which operation do you wish to perform?\nType add, subtract, multiply, or divide");
     
     // Addition
-    
+    if(operation == "add")
+    {
     numReturn = add(num1, num2);
     console.log(num1 + " + " + num2 + " = " + numReturn);
-
-    // Subtraction
+    }
     
+    // Subtraction
+    else if(operation == "subtract")
+    {
     numReturn = sub(num1, num2);
     console.log(num1 + " - " + num2 + " = " + numReturn);
-    
+    }
     // Multiplication
-    
+    else if(operation == "multiply")
+    {
     numReturn = mult(num1, num2);
     console.log(num1 + " X " + num2 + " = " + numReturn);
-    
+    }
     // Division
-    
+    else if(operation == "divide")
+    {
     numReturn = div(num1, num2);
-    console.log(num1 + " / " + num2 + " = " + numReturn);
-    
+        if (num1 == 0 || num2 == 0)
+        {
+            console.log("You can't divide by 0!");
+        }
+        else
+        {
+            console.log(num1 + " / " + num2 + " = " + numReturn);
+        };
+    }
+    else
+    {
+        console.log("You did not enter a correct operation.");
+    };
     
 
 
