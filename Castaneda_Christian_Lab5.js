@@ -25,11 +25,11 @@
         return numSub;
     };
     
-    // var mult = function(num1, num2)
-    // {
-         // var numMult = num1 * num2;
-        // return numMult;
-    // };
+    var mult = function(num1, num2)
+    {
+         var numMult = num1 * num2;
+        return numMult;
+    };
     
     // var divide = function(num1, num2)
     // {
@@ -53,12 +53,12 @@
     numReturn = sub(num1, num2);
     console.log(num1 + " - " + num2 + " = " + numReturn);
     
+    // Multiplication
     
-
-     
-
-
-
+    numReturn = mult(num1, num2);
+    console.log(num1 + " X " + num2 + " = " + numReturn);
+    
+    
 
 
 
